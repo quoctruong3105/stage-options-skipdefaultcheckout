@@ -2,9 +2,7 @@ pipeline {
   agent none
   stages {
     stage('Build') {
-      agent {
-        label 'Slave 1'
-      }
+      agent any
       options {
         skipDefaultCheckout()
       }
